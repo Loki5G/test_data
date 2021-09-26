@@ -8,6 +8,7 @@ public class DataApiException extends RuntimeException {
     public DataApiException(String message, ObjectNode node) {
         super(message);
         this.node = node;
+        //sdafsdfdasdfs
     }
 
     public ObjectNode getNode() {
