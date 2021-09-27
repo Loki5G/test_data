@@ -9,12 +9,12 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-//asdfas
+
 @ControllerAdvice
 public class WebExceptionHandler {
     @ExceptionHandler
     @ResponseBody
-    public ResponseEntity<?> handleAuthApiException(DataApiException exception) {
+    public ResponseEntity<?> handleDataApiException(DataApiException exception) {
         return generateErrorResponse(exception.getNode());
     }
 
